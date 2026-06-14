@@ -1,0 +1,13 @@
+{
+  "name": "article-preview-component",
+  "version": "1.0.0",
+  "description": "![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)",
+  "license": "ISC",
+  "author": "Odiesta",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "sass --watch sass/main.scss:style/main.css"
+  }
+}

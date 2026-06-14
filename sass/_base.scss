@@ -1,0 +1,21 @@
+@use "variables" as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.3rem;
+  background-color: v.$light-grayish-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
