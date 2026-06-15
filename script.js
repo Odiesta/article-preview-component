@@ -22,17 +22,3 @@ articleProfileShareBtn.addEventListener("click", function () {
     articleProfileShareBtnImg.src = "images/icon-share.svg";
   }
 });
-
-/*
-
-Step
-1. When articleProfileShareBtn clicked add class to hide articleProfileWrapper
-2. Change articleProfile background-color to very-dark-grayish-blue
-3. change articleProfilePopup display to block
-
-when articleProfileShareBtn clicked again
-
-1. change articleProfilePopup display to block to none
-2. remove hidden class on articleProfileShareBtn
-3. change articleProfile background-color to white
-*/
