@@ -46,26 +46,36 @@ body {
     border-radius: 1rem 0 0 1rem;
   }
 }
-.article__content {
-  padding: 3rem 4rem;
-}
 .article__title {
   font-size: 1.6rem;
+  margin-top: 1rem;
+  padding: 0 3rem;
 }
 .article__description {
   margin-top: 1rem;
   line-height: 1.5;
   color: hsl(212, 23%, 69%);
   font-weight: 500;
+  padding: 0 3rem;
 }
 .article__profile {
   margin-top: 2rem;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  border-radius: 0 0 1rem 1rem;
+  padding: 2rem 3rem;
+}
+.article__profile--active {
+  background-color: hsl(217, 19%, 35%);
 }
 .article__profile-wrapper {
   display: flex;
+  order: 1;
+}
+.article__profile-wrapper--active {
+  display: none;
 }
 .article__profile-img {
   width: 4rem;
@@ -89,6 +99,32 @@ body {
   height: 3rem;
   border: none;
   cursor: pointer;
+  order: 2;
+}
+.article__profile-share-btn--active {
+  background-color: hsl(212, 23%, 69%);
+}
+.article__profile-share-btn-img {
+  fill: #fff;
+}
+.article__profile-popup {
+  display: none;
+  gap: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  width: 100%;
+  order: 1;
+}
+.article__profile-popup--active {
+  display: flex;
+}
+.article__profile-popup-text {
+  color: hsl(210, 46%, 95%);
+  letter-spacing: 4px;
+}
+.article__profile-popup-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

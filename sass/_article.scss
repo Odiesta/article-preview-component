@@ -29,7 +29,6 @@
   }
 
   &__content {
-    padding: 3rem 4rem;
   }
 
   &__text-container {
@@ -37,6 +36,8 @@
 
   &__title {
     font-size: 1.6rem;
+    margin-top: 1rem;
+    padding: 0 3rem;
   }
 
   &__description {
@@ -44,17 +45,31 @@
     line-height: 1.5;
     color: v.$grayish-blue;
     font-weight: v.$font-medium;
+    padding: 0 3rem;
   }
 
   &__profile {
     margin-top: 2rem;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    // background-color: v.$very-dark-grayish-blue;
+    border-radius: 0 0 1rem 1rem;
+    padding: 2rem 3rem;
+  }
+
+  &__profile--active {
+    background-color: v.$very-dark-grayish-blue;
   }
 
   &__profile-wrapper {
     display: flex;
+    order: 1;
+  }
+
+  &__profile-wrapper--active {
+    display: none;
   }
 
   &__profile-img {
@@ -83,8 +98,38 @@
     height: 3rem;
     border: none;
     cursor: pointer;
+    order: 2;
+  }
+
+  &__profile-share-btn--active {
+    background-color: v.$grayish-blue;
   }
 
   &__profile-share-btn-img {
+    fill: #fff;
+  }
+
+  &__profile-popup {
+    display: none;
+    gap: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    width: 100%;
+    order: 1;
+  }
+
+  &__profile-popup--active {
+    display: flex;
+  }
+
+  &__profile-popup-text {
+    color: v.$light-grayish-blue;
+    letter-spacing: 4px;
+  }
+  &__profile-popup-link {
+  }
+  &__profile-popup-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
