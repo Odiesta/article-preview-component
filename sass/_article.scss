@@ -35,6 +35,7 @@
   }
 
   &__title {
+    color: v.$very-dark-grayish-blue;
     font-size: 1.6rem;
     margin-top: 1rem;
     padding: 0 3rem;
@@ -83,7 +84,7 @@
 
   &__profile-name {
     font-weight: 700;
-    color: v.$very-dark-grayish-blue;
+    color: v.$desaturated-dark-blue;
   }
 
   &__profile-date {
